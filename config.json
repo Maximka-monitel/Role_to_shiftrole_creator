@@ -1,0 +1,29 @@
+{
+    "csv_processing": {
+      "required_fields": ["Наименование роли в ДС"],
+      "model_version": "2025-03-04(11.7.1.7)",
+      "model_name": "Access",
+      "role_template": "Чтение записей под подр-ю {role_name}",
+      "default_delimiter": ";"
+      
+    },
+    
+    "xml_generation": {
+      "namespaces": {
+        "rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+        "md": "http://iec.ch/TC57/61970-552/ModelDescription/1#",
+        "cim": "http://monitel.com/2021/schema-access#"
+      }
+    },
+    
+    "file_management": {
+      "exclude_files": ["Sample.csv"],
+      "log_directory": "log"
+    },
+    
+    "logging": {
+      "level": "DEBUG",
+      "format": "%(asctime)s [%(levelname)s]: %(message)s",
+      "date_format": "%Y-%m-%d %H:%M:%S"
+    }
+  }
